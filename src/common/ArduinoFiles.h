@@ -33,6 +33,10 @@
 #ifndef FILE_WRITE
 #define FILE_WRITE (O_RDWR | O_CREAT | O_AT_END)
 #endif  // FILE_WRITE
+/** Arduino SD.h style flag for open at EOF for read/write with append. */
+#ifndef FILE_APPEND
+#define FILE_APPEND (O_RDWR | O_APPEND | O_AT_END)
+#endif  // FILE_APPEND
 //------------------------------------------------------------------------------
 /**
  * \class PrintFile

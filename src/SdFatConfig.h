@@ -187,7 +187,7 @@
 #elif defined(ARDUINO_MINIMA) || defined(ARDUINO_UNOR4_WIFI)
 #define USE_SPI_ARRAY_TRANSFER 1
 #else  // defined(ARDUINO_ARCH_RP2040)
-#define USE_SPI_ARRAY_TRANSFER 0
+#define USE_SPI_ARRAY_TRANSFER 3
 #endif  // defined(ARDUINO_ARCH_RP2040)
 #endif  // USE_SPI_ARRAY_TRANSFER
 //------------------------------------------------------------------------------
@@ -220,7 +220,7 @@
  *   }
  */
 #ifndef USE_BLOCK_DEVICE_INTERFACE
-#define USE_BLOCK_DEVICE_INTERFACE 0
+#define USE_BLOCK_DEVICE_INTERFACE 1
 #endif  // USE_BLOCK_DEVICE_INTERFACE
 //------------------------------------------------------------------------------
 /**
